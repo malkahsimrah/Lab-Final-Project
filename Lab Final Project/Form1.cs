@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lab_Final_Project.GUI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,27 @@ namespace Lab_Final_Project
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+            var addForm = new AddingAssessmentFormGUI();
+            addForm.Owner = this;
+            addForm.Show();
+        }
+
+        private void btn_ass_Click(object sender, EventArgs e)
+        {
+            var assForm = new AssessmentFormGUI();
+            assForm.Owner = this;
+            assForm.Show();
+        }
+
+        private void btn_Res_Click(object sender, EventArgs e)
+        {
+            var resForm = new ResultFormGUI();
+            resForm.Owner = this;
+            resForm.Show();
         }
     }
 }

@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace Lab_Final_Project.GUI
 {
-    public partial class AssessmentFormGUI : Form
+    public partial class AddingAssessmentFormGUI : Form
     {
-        public AssessmentFormGUI()
+        public AddingAssessmentFormGUI()
         {
             InitializeComponent();
         }
-
     }
 }
