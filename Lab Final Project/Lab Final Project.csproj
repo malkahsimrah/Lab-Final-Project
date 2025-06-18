@@ -76,6 +76,12 @@
     <Compile Include="GUI\ResultFormGUI.Designer.cs">
       <DependentUpon>ResultFormGUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\TeacherCourses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\TeacherCourses.Designer.cs">
+      <DependentUpon>TeacherCourses.cs</DependentUpon>
+    </Compile>
     <Compile Include="StudentTranscript.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AssessmentMarking.resx">
       <DependentUpon>AssessmentMarking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\TeacherCourses.resx">
+      <DependentUpon>TeacherCourses.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentTranscript.resx">
       <DependentUpon>StudentTranscript.cs</DependentUpon>

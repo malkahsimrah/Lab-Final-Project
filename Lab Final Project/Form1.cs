@@ -38,5 +38,20 @@ namespace Lab_Final_Project
             resForm.Owner = this;
             resForm.Show();
         }
+
+        private void teachercourses_Click(object sender, EventArgs e)
+        {
+            var teachercour = new TeacherCourses();
+            teachercour.Owner = this;
+            teachercour.Show();
+
+        }
+
+        private void transcript_Click(object sender, EventArgs e)
+        {
+            var transcript = new StudentTranscript();
+            transcript.Owner = this;
+            transcript.Show();
+        }
     }
 }

@@ -30,5 +30,31 @@ namespace Lab_Final_Project.GUI
             resultFormGUI.Show();
 
         }
+
+        private void btn_assessment_Click(object sender, EventArgs e)
+        {
+            AssessmentMarking assessmentMarking = new AssessmentMarking();
+            assessmentMarking.Show();
+        }
+
+        private void AssessmentFormGUI_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lv_courseAssessment_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+         
+            ListViewItem selectedItem = lv_courseAssessment.SelectedItems[0];
+
+            // Check if the checkbox is checked (assuming CheckBoxes = true)
+            if (selectedItem.Checked)
+            {
+                AssessmentMarking assessmentMarking = new AssessmentMarking();
+                assessmentMarking.Show();
+            }
+        
+    }
     }
 }

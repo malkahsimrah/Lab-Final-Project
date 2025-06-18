@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
             "",
             "Yes",
             "Mid Term",
@@ -36,11 +36,11 @@
             "",
             "25",
             "25"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
             "",
             "Yes",
             "Quiz"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
             "",
             "Yes",
             "Final"}, -1);
@@ -74,9 +74,10 @@
             // btn_back
             // 
             this.btn_back.BackColor = System.Drawing.Color.Sienna;
-            this.btn_back.Location = new System.Drawing.Point(508, 59);
+            this.btn_back.Location = new System.Drawing.Point(762, 91);
+            this.btn_back.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(86, 44);
+            this.btn_back.Size = new System.Drawing.Size(129, 68);
             this.btn_back.TabIndex = 7;
             this.btn_back.Text = "Back";
             this.btn_back.UseVisualStyleBackColor = false;
@@ -84,9 +85,10 @@
             // btn_submit
             // 
             this.btn_submit.BackColor = System.Drawing.Color.Sienna;
-            this.btn_submit.Location = new System.Drawing.Point(416, 59);
+            this.btn_submit.Location = new System.Drawing.Point(624, 91);
+            this.btn_submit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_submit.Name = "btn_submit";
-            this.btn_submit.Size = new System.Drawing.Size(86, 44);
+            this.btn_submit.Size = new System.Drawing.Size(129, 68);
             this.btn_submit.TabIndex = 8;
             this.btn_submit.Text = "Submit";
             this.btn_submit.UseVisualStyleBackColor = false;
@@ -95,9 +97,10 @@
             // btn_attendance
             // 
             this.btn_attendance.BackColor = System.Drawing.Color.Sienna;
-            this.btn_attendance.Location = new System.Drawing.Point(324, 59);
+            this.btn_attendance.Location = new System.Drawing.Point(486, 91);
+            this.btn_attendance.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_attendance.Name = "btn_attendance";
-            this.btn_attendance.Size = new System.Drawing.Size(86, 44);
+            this.btn_attendance.Size = new System.Drawing.Size(129, 68);
             this.btn_attendance.TabIndex = 9;
             this.btn_attendance.Text = "Attendance";
             this.btn_attendance.UseVisualStyleBackColor = false;
@@ -105,9 +108,10 @@
             // btn_announcement
             // 
             this.btn_announcement.BackColor = System.Drawing.Color.Sienna;
-            this.btn_announcement.Location = new System.Drawing.Point(209, 59);
+            this.btn_announcement.Location = new System.Drawing.Point(314, 91);
+            this.btn_announcement.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_announcement.Name = "btn_announcement";
-            this.btn_announcement.Size = new System.Drawing.Size(109, 44);
+            this.btn_announcement.Size = new System.Drawing.Size(164, 68);
             this.btn_announcement.TabIndex = 10;
             this.btn_announcement.Text = "Announcement";
             this.btn_announcement.UseVisualStyleBackColor = false;
@@ -115,9 +119,10 @@
             // btn_grading
             // 
             this.btn_grading.BackColor = System.Drawing.Color.Sienna;
-            this.btn_grading.Location = new System.Drawing.Point(117, 59);
+            this.btn_grading.Location = new System.Drawing.Point(176, 91);
+            this.btn_grading.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_grading.Name = "btn_grading";
-            this.btn_grading.Size = new System.Drawing.Size(86, 44);
+            this.btn_grading.Size = new System.Drawing.Size(129, 68);
             this.btn_grading.TabIndex = 11;
             this.btn_grading.Text = "Grading";
             this.btn_grading.UseVisualStyleBackColor = false;
@@ -125,28 +130,32 @@
             // btn_assessment
             // 
             this.btn_assessment.BackColor = System.Drawing.Color.Sienna;
-            this.btn_assessment.Location = new System.Drawing.Point(25, 59);
+            this.btn_assessment.Location = new System.Drawing.Point(38, 91);
+            this.btn_assessment.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_assessment.Name = "btn_assessment";
-            this.btn_assessment.Size = new System.Drawing.Size(86, 44);
+            this.btn_assessment.Size = new System.Drawing.Size(129, 68);
             this.btn_assessment.TabIndex = 12;
             this.btn_assessment.Text = "Assessment";
             this.btn_assessment.UseVisualStyleBackColor = false;
+            this.btn_assessment.Click += new System.EventHandler(this.btn_assessment_Click);
             // 
             // lbl_sem
             // 
             this.lbl_sem.AutoSize = true;
-            this.lbl_sem.Location = new System.Drawing.Point(469, 22);
+            this.lbl_sem.Location = new System.Drawing.Point(704, 34);
+            this.lbl_sem.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_sem.Name = "lbl_sem";
-            this.lbl_sem.Size = new System.Drawing.Size(38, 13);
+            this.lbl_sem.Size = new System.Drawing.Size(56, 20);
             this.lbl_sem.TabIndex = 2;
             this.lbl_sem.Text = "S2025";
             // 
             // lbl_course
             // 
             this.lbl_course.AutoSize = true;
-            this.lbl_course.Location = new System.Drawing.Point(98, 23);
+            this.lbl_course.Location = new System.Drawing.Point(147, 35);
+            this.lbl_course.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_course.Name = "lbl_course";
-            this.lbl_course.Size = new System.Drawing.Size(137, 13);
+            this.lbl_course.Size = new System.Drawing.Size(206, 20);
             this.lbl_course.TabIndex = 3;
             this.lbl_course.Text = "418-SE3118-F2022065-W1";
             // 
@@ -154,9 +163,10 @@
             // 
             this.lbl_sem_header.AutoSize = true;
             this.lbl_sem_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_sem_header.Location = new System.Drawing.Point(375, 20);
+            this.lbl_sem_header.Location = new System.Drawing.Point(562, 31);
+            this.lbl_sem_header.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_sem_header.Name = "lbl_sem_header";
-            this.lbl_sem_header.Size = new System.Drawing.Size(73, 16);
+            this.lbl_sem_header.Size = new System.Drawing.Size(104, 25);
             this.lbl_sem_header.TabIndex = 4;
             this.lbl_sem_header.Text = "Semester";
             // 
@@ -164,9 +174,10 @@
             // 
             this.lbl_courseAssessment.AutoSize = true;
             this.lbl_courseAssessment.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_courseAssessment.Location = new System.Drawing.Point(22, 122);
+            this.lbl_courseAssessment.Location = new System.Drawing.Point(33, 188);
+            this.lbl_courseAssessment.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_courseAssessment.Name = "lbl_courseAssessment";
-            this.lbl_courseAssessment.Size = new System.Drawing.Size(136, 16);
+            this.lbl_courseAssessment.Size = new System.Drawing.Size(195, 25);
             this.lbl_courseAssessment.TabIndex = 5;
             this.lbl_courseAssessment.Text = "Course Assesment";
             // 
@@ -174,9 +185,10 @@
             // 
             this.lbl_course_header.AutoSize = true;
             this.lbl_course_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_course_header.Location = new System.Drawing.Point(22, 20);
+            this.lbl_course_header.Location = new System.Drawing.Point(33, 31);
+            this.lbl_course_header.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_course_header.Name = "lbl_course_header";
-            this.lbl_course_header.Size = new System.Drawing.Size(56, 16);
+            this.lbl_course_header.Size = new System.Drawing.Size(82, 25);
             this.lbl_course_header.TabIndex = 6;
             this.lbl_course_header.Text = "Course";
             // 
@@ -196,19 +208,21 @@
             this.lv_courseAssessment.FullRowSelect = true;
             this.lv_courseAssessment.GridLines = true;
             this.lv_courseAssessment.HideSelection = false;
-            listViewItem4.StateImageIndex = 0;
-            listViewItem5.StateImageIndex = 0;
-            listViewItem6.StateImageIndex = 0;
+            listViewItem1.StateImageIndex = 0;
+            listViewItem2.StateImageIndex = 0;
+            listViewItem3.StateImageIndex = 0;
             this.lv_courseAssessment.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem4,
-            listViewItem5,
-            listViewItem6});
-            this.lv_courseAssessment.Location = new System.Drawing.Point(25, 186);
+            listViewItem1,
+            listViewItem2,
+            listViewItem3});
+            this.lv_courseAssessment.Location = new System.Drawing.Point(38, 286);
+            this.lv_courseAssessment.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lv_courseAssessment.Name = "lv_courseAssessment";
-            this.lv_courseAssessment.Size = new System.Drawing.Size(708, 170);
+            this.lv_courseAssessment.Size = new System.Drawing.Size(1060, 259);
             this.lv_courseAssessment.TabIndex = 13;
             this.lv_courseAssessment.UseCompatibleStateImageBehavior = false;
             this.lv_courseAssessment.View = System.Windows.Forms.View.Details;
+            this.lv_courseAssessment.SelectedIndexChanged += new System.EventHandler(this.lv_courseAssessment_SelectedIndexChanged);
             // 
             // Edit
             // 
@@ -258,9 +272,10 @@
             // btn_addRecord
             // 
             this.btn_addRecord.BackColor = System.Drawing.Color.Sienna;
-            this.btn_addRecord.Location = new System.Drawing.Point(25, 141);
+            this.btn_addRecord.Location = new System.Drawing.Point(38, 217);
+            this.btn_addRecord.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_addRecord.Name = "btn_addRecord";
-            this.btn_addRecord.Size = new System.Drawing.Size(116, 39);
+            this.btn_addRecord.Size = new System.Drawing.Size(174, 60);
             this.btn_addRecord.TabIndex = 14;
             this.btn_addRecord.Text = "Add New Record";
             this.btn_addRecord.UseVisualStyleBackColor = false;
@@ -270,18 +285,20 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(491, 370);
+            this.label1.Location = new System.Drawing.Point(736, 569);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 16);
+            this.label1.Size = new System.Drawing.Size(91, 25);
             this.label1.TabIndex = 6;
             this.label1.Text = "Total 25";
             // 
             // btn_edit
             // 
             this.btn_edit.BackColor = System.Drawing.Color.Sienna;
-            this.btn_edit.Location = new System.Drawing.Point(147, 141);
+            this.btn_edit.Location = new System.Drawing.Point(220, 217);
+            this.btn_edit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_edit.Name = "btn_edit";
-            this.btn_edit.Size = new System.Drawing.Size(88, 39);
+            this.btn_edit.Size = new System.Drawing.Size(132, 60);
             this.btn_edit.TabIndex = 14;
             this.btn_edit.Text = "Edit";
             this.btn_edit.UseVisualStyleBackColor = false;
@@ -289,18 +306,19 @@
             // btn_delete
             // 
             this.btn_delete.BackColor = System.Drawing.Color.Sienna;
-            this.btn_delete.Location = new System.Drawing.Point(241, 141);
+            this.btn_delete.Location = new System.Drawing.Point(362, 217);
+            this.btn_delete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(70, 39);
+            this.btn_delete.Size = new System.Drawing.Size(105, 60);
             this.btn_delete.TabIndex = 14;
             this.btn_delete.Text = "Delete";
             this.btn_delete.UseVisualStyleBackColor = false;
             // 
             // AssessmentFormGUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.btn_edit);
             this.Controls.Add(this.btn_addRecord);
@@ -317,8 +335,10 @@
             this.Controls.Add(this.lbl_courseAssessment);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl_course_header);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "AssessmentFormGUI";
             this.Text = "AssessmentFormGUI";
+            this.Load += new System.EventHandler(this.AssessmentFormGUI_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
