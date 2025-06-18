@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AssessmentMarking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssessmentMarking.Designer.cs">
+      <DependentUpon>AssessmentMarking.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,12 @@
     <Compile Include="GUI\ResultFormGUI.Designer.cs">
       <DependentUpon>ResultFormGUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="StudentTranscript.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentTranscript.Designer.cs">
+      <DependentUpon>StudentTranscript.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -83,6 +95,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ResultFormGUI.resx">
       <DependentUpon>ResultFormGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssessmentMarking.resx">
+      <DependentUpon>AssessmentMarking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentTranscript.resx">
+      <DependentUpon>StudentTranscript.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
