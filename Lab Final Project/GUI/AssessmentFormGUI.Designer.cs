@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
             "",
             "Yes",
             "Mid Term",
@@ -36,20 +36,20 @@
             "",
             "25",
             "25"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem(new string[] {
             "",
             "Yes",
             "Quiz"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem(new string[] {
             "",
             "Yes",
             "Final"}, -1);
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_back = new System.Windows.Forms.Button();
+            this.btn_submit = new System.Windows.Forms.Button();
+            this.btn_attendance = new System.Windows.Forms.Button();
+            this.btn_announcement = new System.Windows.Forms.Button();
+            this.btn_grading = new System.Windows.Forms.Button();
+            this.btn_assessment = new System.Windows.Forms.Button();
             this.lbl_sem = new System.Windows.Forms.Label();
             this.lbl_course = new System.Windows.Forms.Label();
             this.lbl_sem_header = new System.Windows.Forms.Label();
@@ -65,71 +65,72 @@
             this.Weightage = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Calculate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Details = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.button7 = new System.Windows.Forms.Button();
+            this.btn_addRecord = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.btn_edit = new System.Windows.Forms.Button();
+            this.btn_delete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button6
+            // btn_back
             // 
-            this.button6.BackColor = System.Drawing.Color.Sienna;
-            this.button6.Location = new System.Drawing.Point(508, 59);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(86, 44);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "Back";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btn_back.BackColor = System.Drawing.Color.Sienna;
+            this.btn_back.Location = new System.Drawing.Point(508, 59);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(86, 44);
+            this.btn_back.TabIndex = 7;
+            this.btn_back.Text = "Back";
+            this.btn_back.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btn_submit
             // 
-            this.button5.BackColor = System.Drawing.Color.Sienna;
-            this.button5.Location = new System.Drawing.Point(416, 59);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(86, 44);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "Submit";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btn_submit.BackColor = System.Drawing.Color.Sienna;
+            this.btn_submit.Location = new System.Drawing.Point(416, 59);
+            this.btn_submit.Name = "btn_submit";
+            this.btn_submit.Size = new System.Drawing.Size(86, 44);
+            this.btn_submit.TabIndex = 8;
+            this.btn_submit.Text = "Submit";
+            this.btn_submit.UseVisualStyleBackColor = false;
+            this.btn_submit.Click += new System.EventHandler(this.btn_submit_Click);
             // 
-            // button4
+            // btn_attendance
             // 
-            this.button4.BackColor = System.Drawing.Color.Sienna;
-            this.button4.Location = new System.Drawing.Point(324, 59);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(86, 44);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "Attendance";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btn_attendance.BackColor = System.Drawing.Color.Sienna;
+            this.btn_attendance.Location = new System.Drawing.Point(324, 59);
+            this.btn_attendance.Name = "btn_attendance";
+            this.btn_attendance.Size = new System.Drawing.Size(86, 44);
+            this.btn_attendance.TabIndex = 9;
+            this.btn_attendance.Text = "Attendance";
+            this.btn_attendance.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btn_announcement
             // 
-            this.button3.BackColor = System.Drawing.Color.Sienna;
-            this.button3.Location = new System.Drawing.Point(209, 59);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(109, 44);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Announcement";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btn_announcement.BackColor = System.Drawing.Color.Sienna;
+            this.btn_announcement.Location = new System.Drawing.Point(209, 59);
+            this.btn_announcement.Name = "btn_announcement";
+            this.btn_announcement.Size = new System.Drawing.Size(109, 44);
+            this.btn_announcement.TabIndex = 10;
+            this.btn_announcement.Text = "Announcement";
+            this.btn_announcement.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btn_grading
             // 
-            this.button2.BackColor = System.Drawing.Color.Sienna;
-            this.button2.Location = new System.Drawing.Point(117, 59);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 44);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Grading";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_grading.BackColor = System.Drawing.Color.Sienna;
+            this.btn_grading.Location = new System.Drawing.Point(117, 59);
+            this.btn_grading.Name = "btn_grading";
+            this.btn_grading.Size = new System.Drawing.Size(86, 44);
+            this.btn_grading.TabIndex = 11;
+            this.btn_grading.Text = "Grading";
+            this.btn_grading.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btn_assessment
             // 
-            this.button1.BackColor = System.Drawing.Color.Sienna;
-            this.button1.Location = new System.Drawing.Point(25, 59);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 44);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Assessment";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_assessment.BackColor = System.Drawing.Color.Sienna;
+            this.btn_assessment.Location = new System.Drawing.Point(25, 59);
+            this.btn_assessment.Name = "btn_assessment";
+            this.btn_assessment.Size = new System.Drawing.Size(86, 44);
+            this.btn_assessment.TabIndex = 12;
+            this.btn_assessment.Text = "Assessment";
+            this.btn_assessment.UseVisualStyleBackColor = false;
             // 
             // lbl_sem
             // 
@@ -195,13 +196,13 @@
             this.lv_courseAssessment.FullRowSelect = true;
             this.lv_courseAssessment.GridLines = true;
             this.lv_courseAssessment.HideSelection = false;
-            listViewItem1.StateImageIndex = 0;
-            listViewItem2.StateImageIndex = 0;
-            listViewItem3.StateImageIndex = 0;
+            listViewItem4.StateImageIndex = 0;
+            listViewItem5.StateImageIndex = 0;
+            listViewItem6.StateImageIndex = 0;
             this.lv_courseAssessment.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2,
-            listViewItem3});
+            listViewItem4,
+            listViewItem5,
+            listViewItem6});
             this.lv_courseAssessment.Location = new System.Drawing.Point(25, 186);
             this.lv_courseAssessment.Name = "lv_courseAssessment";
             this.lv_courseAssessment.Size = new System.Drawing.Size(708, 170);
@@ -254,15 +255,16 @@
             this.Details.Text = "Details";
             this.Details.Width = 77;
             // 
-            // button7
+            // btn_addRecord
             // 
-            this.button7.BackColor = System.Drawing.Color.Sienna;
-            this.button7.Location = new System.Drawing.Point(25, 141);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(116, 39);
-            this.button7.TabIndex = 14;
-            this.button7.Text = "Add New Record";
-            this.button7.UseVisualStyleBackColor = false;
+            this.btn_addRecord.BackColor = System.Drawing.Color.Sienna;
+            this.btn_addRecord.Location = new System.Drawing.Point(25, 141);
+            this.btn_addRecord.Name = "btn_addRecord";
+            this.btn_addRecord.Size = new System.Drawing.Size(116, 39);
+            this.btn_addRecord.TabIndex = 14;
+            this.btn_addRecord.Text = "Add New Record";
+            this.btn_addRecord.UseVisualStyleBackColor = false;
+            this.btn_addRecord.Click += new System.EventHandler(this.btn_addRecord_Click);
             // 
             // label1
             // 
@@ -274,41 +276,41 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Total 25";
             // 
-            // button8
+            // btn_edit
             // 
-            this.button8.BackColor = System.Drawing.Color.Sienna;
-            this.button8.Location = new System.Drawing.Point(147, 141);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(88, 39);
-            this.button8.TabIndex = 14;
-            this.button8.Text = "Edit";
-            this.button8.UseVisualStyleBackColor = false;
+            this.btn_edit.BackColor = System.Drawing.Color.Sienna;
+            this.btn_edit.Location = new System.Drawing.Point(147, 141);
+            this.btn_edit.Name = "btn_edit";
+            this.btn_edit.Size = new System.Drawing.Size(88, 39);
+            this.btn_edit.TabIndex = 14;
+            this.btn_edit.Text = "Edit";
+            this.btn_edit.UseVisualStyleBackColor = false;
             // 
-            // button9
+            // btn_delete
             // 
-            this.button9.BackColor = System.Drawing.Color.Sienna;
-            this.button9.Location = new System.Drawing.Point(241, 141);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(70, 39);
-            this.button9.TabIndex = 14;
-            this.button9.Text = "Delete";
-            this.button9.UseVisualStyleBackColor = false;
+            this.btn_delete.BackColor = System.Drawing.Color.Sienna;
+            this.btn_delete.Location = new System.Drawing.Point(241, 141);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(70, 39);
+            this.btn_delete.TabIndex = 14;
+            this.btn_delete.Text = "Delete";
+            this.btn_delete.UseVisualStyleBackColor = false;
             // 
             // AssessmentFormGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.btn_delete);
+            this.Controls.Add(this.btn_edit);
+            this.Controls.Add(this.btn_addRecord);
             this.Controls.Add(this.lv_courseAssessment);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_back);
+            this.Controls.Add(this.btn_submit);
+            this.Controls.Add(this.btn_attendance);
+            this.Controls.Add(this.btn_announcement);
+            this.Controls.Add(this.btn_grading);
+            this.Controls.Add(this.btn_assessment);
             this.Controls.Add(this.lbl_sem);
             this.Controls.Add(this.lbl_course);
             this.Controls.Add(this.lbl_sem_header);
@@ -324,12 +326,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_back;
+        private System.Windows.Forms.Button btn_submit;
+        private System.Windows.Forms.Button btn_attendance;
+        private System.Windows.Forms.Button btn_announcement;
+        private System.Windows.Forms.Button btn_grading;
+        private System.Windows.Forms.Button btn_assessment;
         private System.Windows.Forms.Label lbl_sem;
         private System.Windows.Forms.Label lbl_course;
         private System.Windows.Forms.Label lbl_sem_header;
@@ -345,9 +347,9 @@
         private System.Windows.Forms.ColumnHeader Weightage;
         private System.Windows.Forms.ColumnHeader Calculate;
         private System.Windows.Forms.ColumnHeader Details;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btn_addRecord;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btn_edit;
+        private System.Windows.Forms.Button btn_delete;
     }
 }

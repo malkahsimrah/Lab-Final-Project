@@ -16,5 +16,10 @@ namespace Lab_Final_Project.GUI
         {
             InitializeComponent();
         }
+
+        private void btn_submitResult_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

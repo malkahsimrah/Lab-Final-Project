@@ -17,5 +17,18 @@ namespace Lab_Final_Project.GUI
             InitializeComponent();
         }
 
+        private void btn_addRecord_Click(object sender, EventArgs e)
+        {
+            AddingAssessmentFormGUI addingAssessmentForm = new AddingAssessmentFormGUI();
+            addingAssessmentForm.Show();
+        }
+
+
+        private void btn_submit_Click(object sender, EventArgs e)
+        {
+            ResultFormGUI resultFormGUI = new ResultFormGUI();
+            resultFormGUI.Show();
+
+        }
     }
 }
