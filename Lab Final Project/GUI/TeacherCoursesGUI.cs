@@ -8,23 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Lab_Final_Project
+namespace Lab_Final_Project.GUI
 {
-    public partial class AssessmentMarking : Form
+    public partial class TeacherCoursesGUI : Form
     {
-        public AssessmentMarking()
+        public TeacherCoursesGUI()
         {
             InitializeComponent();
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        private void btn_assesment_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            AssessmentFormGUI assessmentFormGUI = new AssessmentFormGUI();
+            assessmentFormGUI.Show();
         }
     }
 }

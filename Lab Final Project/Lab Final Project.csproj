@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,6 +47,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,17 +65,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssessmentMarking.cs">
+    <Compile Include="BL\loginBL.cs" />
+    <Compile Include="DL\DBConnection.cs" />
+    <Compile Include="DL\loginDL.cs" />
+    <Compile Include="DTO\loginDTO.cs" />
+    <Compile Include="GUI\AssessmentMarkingGUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AssessmentMarking.Designer.cs">
-      <DependentUpon>AssessmentMarking.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="GUI\AssessmentMarkingGUI.Designer.cs">
+      <DependentUpon>AssessmentMarkingGUI.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\AssessmentFormGUI.cs">
       <SubType>Form</SubType>
@@ -70,46 +87,58 @@
     <Compile Include="GUI\AddingAssessmentFormGUI.Designer.cs">
       <DependentUpon>AddingAssessmentFormGUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\LoginGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\LoginGUI.Designer.cs">
+      <DependentUpon>LoginGUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\ResultFormGUI.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\ResultFormGUI.Designer.cs">
       <DependentUpon>ResultFormGUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\TeacherCourses.cs">
+    <Compile Include="GUI\TeacherCoursesGUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\TeacherCourses.Designer.cs">
-      <DependentUpon>TeacherCourses.cs</DependentUpon>
+    <Compile Include="GUI\TeacherCoursesGUI.Designer.cs">
+      <DependentUpon>TeacherCoursesGUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="StudentTranscript.cs">
+    <Compile Include="GUI\StudentTranscriptGUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StudentTranscript.Designer.cs">
-      <DependentUpon>StudentTranscript.cs</DependentUpon>
+    <Compile Include="GUI\StudentTranscriptGUI.Designer.cs">
+      <DependentUpon>StudentTranscriptGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\WrongGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\WrongGUI.Designer.cs">
+      <DependentUpon>WrongGUI.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\AddingAssessmentFormGUI.resx">
       <DependentUpon>AddingAssessmentFormGUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\AssessmentFormGUI.resx">
       <DependentUpon>AssessmentFormGUI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\LoginGUI.resx">
+      <DependentUpon>LoginGUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\ResultFormGUI.resx">
       <DependentUpon>ResultFormGUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AssessmentMarking.resx">
-      <DependentUpon>AssessmentMarking.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\AssessmentMarkingGUI.resx">
+      <DependentUpon>AssessmentMarkingGUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\TeacherCourses.resx">
-      <DependentUpon>TeacherCourses.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\TeacherCoursesGUI.resx">
+      <DependentUpon>TeacherCoursesGUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StudentTranscript.resx">
-      <DependentUpon>StudentTranscript.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\StudentTranscriptGUI.resx">
+      <DependentUpon>StudentTranscriptGUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -119,6 +148,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -132,6 +162,28 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GradingSystem.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GradingSystem_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>GradingSystem.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\ricardo-diaz-IP9tCoGqaok-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

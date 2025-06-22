@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Lab_Final_Project
 {
-    public partial class StudentTranscript : Form
+    public partial class AssessmentMarkingGUI : Form
     {
-        public StudentTranscript()
+        public AssessmentMarkingGUI()
         {
             InitializeComponent();
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -22,7 +27,7 @@ namespace Lab_Final_Project
 
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void AssessmentMarkingGUI_Load(object sender, EventArgs e)
         {
 
         }
