@@ -1,6 +1,6 @@
 ﻿namespace Lab_Final_Project.GUI
 {
-    partial class TeacherCourses
+    partial class TeacherCoursesGUI
     {
         /// <summary>
         /// Required designer variable.
@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
             "2389-F2022",
             "Software Design ",
             "F2022",
             "InProgress"}, -1, System.Drawing.SystemColors.Window, System.Drawing.Color.Sienna, null);
-            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
             "481-F2021",
             "Software Construction &v Development",
             "F2021",
             "Copmlete"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
             "223-F2023",
             "Software Design",
             "F2023",
             "InProgress"}, -1, System.Drawing.SystemColors.Window, System.Drawing.Color.Sienna, null);
-            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
             "189-F2024",
             "Software Development",
             "F2024",
@@ -64,10 +64,9 @@
             // btn_assesment
             // 
             this.btn_assesment.BackColor = System.Drawing.Color.Sienna;
-            this.btn_assesment.Location = new System.Drawing.Point(23, 45);
-            this.btn_assesment.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_assesment.Location = new System.Drawing.Point(51, 30);
             this.btn_assesment.Name = "btn_assesment";
-            this.btn_assesment.Size = new System.Drawing.Size(129, 68);
+            this.btn_assesment.Size = new System.Drawing.Size(86, 44);
             this.btn_assesment.TabIndex = 8;
             this.btn_assesment.Text = "Assesments";
             this.btn_assesment.UseVisualStyleBackColor = false;
@@ -76,10 +75,9 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Sienna;
-            this.button2.Location = new System.Drawing.Point(719, 45);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Location = new System.Drawing.Point(515, 30);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(129, 68);
+            this.button2.Size = new System.Drawing.Size(86, 44);
             this.button2.TabIndex = 10;
             this.button2.Text = "Back";
             this.button2.UseVisualStyleBackColor = false;
@@ -87,10 +85,9 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Sienna;
-            this.button3.Location = new System.Drawing.Point(582, 45);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button3.Location = new System.Drawing.Point(424, 30);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(129, 68);
+            this.button3.Size = new System.Drawing.Size(86, 44);
             this.button3.TabIndex = 11;
             this.button3.Text = "Submit";
             this.button3.UseVisualStyleBackColor = false;
@@ -98,10 +95,9 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Sienna;
-            this.button4.Location = new System.Drawing.Point(445, 45);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button4.Location = new System.Drawing.Point(333, 30);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(129, 68);
+            this.button4.Size = new System.Drawing.Size(86, 44);
             this.button4.TabIndex = 12;
             this.button4.Text = "Attendence";
             this.button4.UseVisualStyleBackColor = false;
@@ -109,10 +105,9 @@
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.Sienna;
-            this.button5.Location = new System.Drawing.Point(308, 45);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button5.Location = new System.Drawing.Point(241, 30);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(129, 68);
+            this.button5.Size = new System.Drawing.Size(86, 44);
             this.button5.TabIndex = 13;
             this.button5.Text = "Annoucements";
             this.button5.UseVisualStyleBackColor = false;
@@ -120,10 +115,9 @@
             // grading
             // 
             this.grading.BackColor = System.Drawing.Color.Sienna;
-            this.grading.Location = new System.Drawing.Point(171, 45);
-            this.grading.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.grading.Location = new System.Drawing.Point(150, 30);
             this.grading.Name = "grading";
-            this.grading.Size = new System.Drawing.Size(129, 68);
+            this.grading.Size = new System.Drawing.Size(86, 44);
             this.grading.TabIndex = 14;
             this.grading.Text = "Grading";
             this.grading.UseVisualStyleBackColor = false;
@@ -137,18 +131,19 @@
             this.columnHeader3,
             this.columnHeader4});
             this.listView1.HideSelection = false;
-            listViewItem5.StateImageIndex = 0;
-            listViewItem6.StateImageIndex = 0;
-            listViewItem7.StateImageIndex = 0;
-            listViewItem8.StateImageIndex = 0;
+            listViewItem1.StateImageIndex = 0;
+            listViewItem2.StateImageIndex = 0;
+            listViewItem3.StateImageIndex = 0;
+            listViewItem4.StateImageIndex = 0;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem5,
-            listViewItem6,
-            listViewItem7,
-            listViewItem8});
-            this.listView1.Location = new System.Drawing.Point(23, 130);
+            listViewItem1,
+            listViewItem2,
+            listViewItem3,
+            listViewItem4});
+            this.listView1.Location = new System.Drawing.Point(24, 95);
+            this.listView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(825, 280);
+            this.listView1.Size = new System.Drawing.Size(624, 183);
             this.listView1.TabIndex = 15;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -173,11 +168,11 @@
             this.columnHeader4.Text = "Status";
             this.columnHeader4.Width = 150;
             // 
-            // TeacherCourses
+            // TeacherCoursesGUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(975, 450);
+            this.ClientSize = new System.Drawing.Size(659, 376);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.grading);
             this.Controls.Add(this.button5);
@@ -185,7 +180,8 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btn_assesment);
-            this.Name = "TeacherCourses";
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "TeacherCoursesGUI";
             this.Text = "TeacherCourses";
             this.ResumeLayout(false);
 

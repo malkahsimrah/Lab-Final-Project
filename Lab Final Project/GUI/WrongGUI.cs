@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace Lab_Final_Project.GUI
 {
-    public partial class TeacherCourses : Form
+    public partial class WrongGUI : Form
     {
-        public TeacherCourses()
+        public WrongGUI()
         {
             InitializeComponent();
-        }
-
-        private void btn_assesment_Click(object sender, EventArgs e)
-        {
-            AssessmentFormGUI assessmentFormGUI = new AssessmentFormGUI();
-            assessmentFormGUI.Show();
         }
     }
 }

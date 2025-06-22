@@ -33,7 +33,7 @@ namespace Lab_Final_Project.GUI
 
         private void btn_assessment_Click(object sender, EventArgs e)
         {
-            AssessmentMarking assessmentMarking = new AssessmentMarking();
+            AssessmentMarkingGUI assessmentMarking = new AssessmentMarkingGUI();
             assessmentMarking.Show();
         }
 
@@ -51,7 +51,7 @@ namespace Lab_Final_Project.GUI
             // Check if the checkbox is checked (assuming CheckBoxes = true)
             if (selectedItem.Checked)
             {
-                AssessmentMarking assessmentMarking = new AssessmentMarking();
+                AssessmentMarkingGUI assessmentMarking = new AssessmentMarkingGUI();
                 assessmentMarking.Show();
             }
         
