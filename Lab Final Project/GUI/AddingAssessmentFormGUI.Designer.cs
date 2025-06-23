@@ -231,6 +231,7 @@
             // 
             this.cmb_calculation.FormattingEnabled = true;
             this.cmb_calculation.Items.AddRange(new object[] {
+            "Simple",
             "Average",
             "Best of 4",
             "Best of 3",
@@ -303,6 +304,8 @@
             this.Controls.Add(this.lbl_course_header);
             this.Name = "AddingAssessmentFormGUI";
             this.Text = "Adding Assessment";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddingAssessmentFormGUI_FormClosing);
+            this.Load += new System.EventHandler(this.AddingAssessmentFormGUI_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

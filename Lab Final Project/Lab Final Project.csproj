@@ -65,9 +65,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BL\AssessmentBL.cs" />
     <Compile Include="BL\loginBL.cs" />
+    <Compile Include="DL\AssessmentDL.cs" />
     <Compile Include="DL\DBConnection.cs" />
     <Compile Include="DL\loginDL.cs" />
+    <Compile Include="DTO\AssessmentDTO.cs" />
+    <Compile Include="DTO\CourseDTO.cs" />
     <Compile Include="DTO\loginDTO.cs" />
     <Compile Include="GUI\AssessmentMarkingGUI.cs">
       <SubType>Form</SubType>
