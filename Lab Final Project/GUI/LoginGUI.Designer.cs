@@ -113,6 +113,7 @@
             this.MinimizeBox = false;
             this.Name = "LoginGUI";
             this.Text = "LoginGUI";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LoginGUI_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

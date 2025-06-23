@@ -34,7 +34,7 @@ namespace Lab_Final_Project.BL
             {
                 return new StudentTranscriptGUI();
             }
-            else if (toReturn.Role.Equals("Teacher", StringComparison.OrdinalIgnoreCase))
+            else if (toReturn.Role.Equals("Faculty", StringComparison.OrdinalIgnoreCase))
             {
                 return new AssessmentFormGUI();
             }

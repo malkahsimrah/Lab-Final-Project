@@ -47,7 +47,7 @@ namespace Lab_Final_Project
 
             if (result == DialogResult.Yes)
             {
-                loginGUI.Show();  // Show the login form
+                this.Owner.Show();  // Show the login form
             }
             else
             {

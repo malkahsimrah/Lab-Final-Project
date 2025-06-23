@@ -36,8 +36,9 @@ namespace Lab_Final_Project.GUI
                 return;
             }
             loginDTO = new loginDTO(username, password);
-            loginBL.VerifyUser(loginDTO).Show(this);
-
+            Form nextForm = loginBL.VerifyUser(loginDTO);
+            nextForm.Owner = this; // Set LoginGUI as the parent
+            nextForm.Show();
             this.Hide();
         }
 
@@ -47,6 +48,10 @@ namespace Lab_Final_Project.GUI
             txt_password.Clear();
             txt_username.Focus();
 
+        }
+        private void LoginGUI_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit(); // Ensures the whole application exits
         }
     }
 }
